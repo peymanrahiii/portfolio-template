@@ -1,0 +1,66 @@
+{
+  "personalInfo": {
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe"
+  },
+  "experience": [
+    {
+      "id": "exp1",
+      "company": "Tech Innovations Inc.",
+      "position": "Senior Full Stack Developer",
+      "startDate": "2022-01-15",
+      "endDate": null
+    },
+    {
+      "id": "exp2",
+      "company": "StartupXYZ",
+      "position": "Full Stack Developer",
+      "startDate": "2020-03-01",
+      "endDate": "2021-12-31"
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "institution": "University of California, Berkeley",
+      "degree": "Bachelor of Science",
+      "endDate": "2020-05-15"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React"
+    },
+    {
+      "name": "Node.js"
+    },
+    {
+      "name": "TypeScript"
+    },
+    {
+      "name": "AWS"
+    },
+    {
+      "name": "PostgreSQL"
+    },
+    {
+      "name": "Docker"
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "name": "E-Commerce Analytics Dashboard",
+      "description": "Real-time analytics dashboard for e-commerce platforms with interactive charts, sales forecasting, and performance metrics. Built with React, D3.js, and Node.js backend.",
+      "technologies": ["React", "D3.js", "Node.js", "PostgreSQL", "Redis"]
+    },
+    {
+      "id": "proj2",
+      "name": "Task Management API",
+      "description": "RESTful API for task management with user authentication, real-time notifications, and file attachments. Deployed using Docker and AWS ECS.",
+      "technologies": ["Express.js", "MongoDB", "Socket.io", "AWS S3", "Docker"]
+    }
+  ]
+} 

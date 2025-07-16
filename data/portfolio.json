@@ -1,0 +1,160 @@
+{
+  "personalInfo": {
+    "name": "John Doe",
+    "title": "Full Stack Developer",
+    "location": "San Francisco, CA",
+    "email": "john.doe@email.com",
+    "phone": "+1 (555) 123-4567",
+    "website": "https://johndoe.dev",
+    "linkedin": "https://linkedin.com/in/johndoe",
+    "github": "https://github.com/johndoe",
+    "summary": "Passionate full-stack developer with 5+ years of experience building scalable web applications. Expertise in React, Node.js, and cloud technologies. Love solving complex problems and creating user-centric solutions.",
+    "profileImage": "https://example.com/profile.jpg"
+  },
+  "experience": [
+    {
+      "id": "exp1",
+      "company": "Tech Innovations Inc.",
+      "position": "Senior Full Stack Developer",
+      "startDate": "2022-01-15",
+      "endDate": null,
+      "description": "Led development of microservices architecture serving 100K+ users. Implemented CI/CD pipelines reducing deployment time by 60%. Mentored junior developers and conducted code reviews.",
+      "location": "San Francisco, CA",
+      "isCurrentPosition": true,
+      "skills": [
+        "React",
+        "Node.js",
+        "AWS",
+        "Docker",
+        "PostgreSQL"
+      ]
+    },
+    {
+      "id": "exp2",
+      "company": "StartupXYZ",
+      "position": "Full Stack Developer",
+      "startDate": "2020-03-01",
+      "endDate": "2021-12-31",
+      "description": "Built and maintained e-commerce platform handling $2M+ in transactions. Developed RESTful APIs and responsive front-end interfaces. Collaborated with cross-functional teams in Agile environment.",
+      "location": "San Francisco, CA",
+      "isCurrentPosition": false,
+      "skills": [
+        "Vue.js",
+        "Express.js",
+        "MongoDB",
+        "Stripe API"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "id": "edu1",
+      "institution": "University of California, Berkeley",
+      "degree": "Bachelor of Science",
+      "field": "Computer Science",
+      "startDate": "2016-08-01",
+      "endDate": "2020-05-15",
+      "description": "Relevant coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Machine Learning",
+      "gpa": "3.8",
+      "location": "Berkeley, CA"
+    }
+  ],
+  "skills": [
+    {
+      "name": "React",
+      "level": "Expert",
+      "category": "Frontend",
+      "endorsements": 25
+    },
+    {
+      "name": "Node.js",
+      "level": "Advanced",
+      "category": "Backend",
+      "endorsements": 20
+    },
+    {
+      "name": "TypeScript",
+      "level": "Advanced",
+      "category": "Programming Languages",
+      "endorsements": 18
+    },
+    {
+      "name": "AWS",
+      "level": "Intermediate",
+      "category": "Cloud Platforms",
+      "endorsements": 15
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Advanced",
+      "category": "Databases",
+      "endorsements": 12
+    },
+    {
+      "name": "Docker",
+      "level": "Intermediate",
+      "category": "DevOps",
+      "endorsements": 10
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj1",
+      "name": "E-Commerce Analytics Dashboard",
+      "description": "Real-time analytics dashboard for e-commerce platforms with interactive charts, sales forecasting, and performance metrics. Built with React, D3.js, and Node.js backend.",
+      "technologies": [
+        "React",
+        "D3.js",
+        "Node.js",
+        "PostgreSQL",
+        "Redis"
+      ],
+      "startDate": "2023-01-01",
+      "endDate": "2023-03-15",
+      "url": "https://analytics-demo.johndoe.dev",
+      "githubUrl": "https://github.com/johndoe/ecommerce-analytics",
+      "imageUrl": "https://example.com/project1.jpg",
+      "featured": true
+    },
+    {
+      "id": "proj2",
+      "name": "Task Management API",
+      "description": "RESTful API for task management with user authentication, real-time notifications, and file attachments. Deployed using Docker and AWS ECS.",
+      "technologies": [
+        "Express.js",
+        "MongoDB",
+        "Socket.io",
+        "AWS S3",
+        "Docker"
+      ],
+      "startDate": "2022-09-01",
+      "endDate": "2022-11-30",
+      "url": null,
+      "githubUrl": "https://github.com/johndoe/task-api",
+      "imageUrl": null,
+      "featured": false
+    }
+  ],
+  "certifications": [
+    {
+      "id": "cert1",
+      "name": "AWS Certified Solutions Architect",
+      "issuer": "Amazon Web Services",
+      "issueDate": "2023-06-15",
+      "expirationDate": "2026-06-15",
+      "credentialId": "AWS-SA-123456",
+      "credentialUrl": "https://aws.amazon.com/verification"
+    }
+  ],
+  "languages": [
+    {
+      "name": "English",
+      "proficiency": "Native or bilingual"
+    },
+    {
+      "name": "Spanish",
+      "proficiency": "Professional working"
+    }
+  ],
+  "lastUpdated": "2025-07-16T05:58:18.237Z"
+}
