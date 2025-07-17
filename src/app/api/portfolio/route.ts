@@ -1,19 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { promises as fs } from 'fs';
-import path from 'path';
+import { kv } from '@vercel/kv';
 import { PortfolioData, ApiResponse } from '@/types/portfolio';
-
-const DATA_DIR = path.join('/tmp');
-const PORTFOLIO_FILE = path.join(DATA_DIR, 'portfolio.json');
-
-// Ensure data directory exists
-async function ensureDataDir() {
-  try {
-    await fs.access(DATA_DIR);
-  } catch {
-    await fs.mkdir(DATA_DIR, { recursive: true });
-  }
-}
 
 // Validate required fields
 function validatePortfolioData(data: any): string | null {
@@ -45,11 +32,8 @@ export async function POST(request: NextRequest) {
       lastUpdated: new Date().toISOString(),
     };
 
-    // Ensure data directory exists
-    await ensureDataDir();
-
-    // Save to JSON file
-    await fs.writeFile(PORTFOLIO_FILE, JSON.stringify(portfolioData, null, 2));
+    // Save to Vercel KV
+    await kv.set('portfolio', portfolioData);
 
     return NextResponse.json(
       { 
@@ -74,22 +58,20 @@ export async function POST(request: NextRequest) {
 
 export async function GET(request: NextRequest) {
   try {
-    await ensureDataDir();
+    // Retrieve from Vercel KV
+    const portfolioData = await kv.get('portfolio');
     
-    try {
-      const fileContent = await fs.readFile(PORTFOLIO_FILE, 'utf-8');
-      const portfolioData: PortfolioData = JSON.parse(fileContent);
-      
+    if (portfolioData) {
       return NextResponse.json(
         { 
           success: true, 
           message: 'Portfolio data retrieved successfully',
-          data: portfolioData 
+          data: portfolioData as PortfolioData 
         } as ApiResponse,
         { status: 200 }
       );
-    } catch (fileError) {
-      // File doesn't exist yet
+    } else {
+      // No data found
       return NextResponse.json(
         { 
           success: false, 
