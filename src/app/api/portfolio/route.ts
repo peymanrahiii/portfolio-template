@@ -3,7 +3,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { PortfolioData, ApiResponse } from '@/types/portfolio';
 
-const DATA_DIR = path.join(process.cwd(), 'data');
+const DATA_DIR = path.join('/tmp');
 const PORTFOLIO_FILE = path.join(DATA_DIR, 'portfolio.json');
 
 // Ensure data directory exists
